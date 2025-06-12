@@ -1,1 +1,3 @@
-Nim: 2133030349
+Nama: Alex
+NIM: 213303030349
+Tema : Contoh Tugas
