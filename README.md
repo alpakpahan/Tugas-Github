@@ -1,7 +1,7 @@
 # Tugas
 
-## Nama Kelompok
+ Nama Kelompok
 
-## Alex
+ Alex
 
-## Tema Penerapan Github
+ Tema Penerapan Github
