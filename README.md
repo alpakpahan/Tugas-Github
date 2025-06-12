@@ -1,3 +1,1 @@
-Nama : Alexander Pakpahan
-Nim : 213303030349
-Tema : Tugas 
+Nim: 2133030349
