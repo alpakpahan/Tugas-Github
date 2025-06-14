@@ -1,3 +1,91 @@
 Nama: Alexander Pakpahan
 Nim: 21330303049
 Tema: Tugas Github
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesan Kopi Online</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2ebe3;
+      color: #333;
+      padding: 20px;
+    }
+    h1 {
+      color: #6b4f4f;
+    }
+    .menu {
+      margin-bottom: 30px;
+    }
+    .menu-item {
+      background-color: #fff;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 5px;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      max-width: 400px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #6b4f4f;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #543d3d;
+    }
+  </style>
+</head>
+<body>
+  <h1>Selamat Datang di KopiKu</h1>
+  <p>Silakan pilih kopi favoritmu dan isi formulir untuk memesan.</p>
+
+  <div class="menu">
+    <h2>Menu Kopi</h2>
+    <div class="menu-item">☕ Espresso - Rp15.000</div>
+    <div class="menu-item">☕ Americano - Rp18.000</div>
+    <div class="menu-item">☕ Cappuccino - Rp20.000</div>
+    <div class="menu-item">☕ Latte - Rp22.000</div>
+  </div>
+
+  <form action="proses_pesan.php" method="POST">
+    <label for="nama">Nama Lengkap:</label>
+    <input type="text" id="nama" name="nama" required>
+
+    <label for="kopi">Pilih Kopi:</label>
+    <select id="kopi" name="kopi" required>
+      <option value="">-- Pilih --</option>
+      <option value="Espresso">Espresso</option>
+      <option value="Americano">Americano</option>
+      <option value="Cappuccino">Cappuccino</option>
+      <option value="Latte">Latte</option>
+    </select>
+
+    <label for="jumlah">Jumlah:</label>
+    <input type="number" id="jumlah" name="jumlah" min="1" required>
+
+    <label for="catatan">Catatan Tambahan:</label>
+    <textarea id="catatan" name="catatan" rows="4"></textarea>
+
+    <button type="submit">Pesan Sekarang</button>
+  </form>
+</body>
+</html>
